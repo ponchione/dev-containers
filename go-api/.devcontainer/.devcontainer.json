@@ -1,0 +1,21 @@
+{
+  "name": "Go (API)",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+
+  "workspaceFolder": "/api",
+
+  "postCreateCommand": "go mod tidy",
+
+  "forwardPorts": [8080],
+  
+  "customizations": {
+    "jetbrains": {
+      "plugins": [
+        "org.jetbrains.plugins.go", 
+        "Docker"                   
+      ]
+    }
+  }
+}
