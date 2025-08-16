@@ -6,12 +6,22 @@
 
   "workspaceFolder": "/api",
 
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
   "postCreateCommand": "go mod tidy",
 
   "forwardPorts": [8080],
   
   "customizations": {
     "jetbrains": {
+      "settings": {
+        "org.jetbrains.plugins.go:app:Go.renamePackageOnDirectoryRenaming": "yes",
+        "com.intellij:app:BuiltInServerOptions.builtInServerPort": 49376,
+        "com.intellij:app:HttpConfigurable.use_proxy_pac": true
+      },
       "plugins": [
         "org.jetbrains.plugins.go", 
         "Docker"                   

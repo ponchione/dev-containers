@@ -1,7 +1,0 @@
-FROM node:current-alpine
-
-WORKDIR /app
-
-RUN apk add --no-cache git 
-
-CMD ["npm", "run", "dev"]

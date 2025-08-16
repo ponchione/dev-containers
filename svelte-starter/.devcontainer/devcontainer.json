@@ -6,6 +6,11 @@
 
   "workspaceFolder": "/app",
 
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
   "postCreateCommand": "npm install",
 
   "forwardPorts": [5173],
@@ -14,7 +19,8 @@
     "jetbrains": {
       "plugins": [
         "com.intellij.lang.javascript", 
-        "org.jetbrains.plugins.svelte"  
+        "org.jetbrains.plugins.svelte",
+        "Docker"
       ]
     }
   }
